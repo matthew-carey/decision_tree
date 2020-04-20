@@ -1,0 +1,125 @@
+{ // Note: Comments are not valid in JSON. The build process will remove these comments and minimize this file
+  "cards": [{ // This is where all of the individual cards and their contents are stored.
+    /*
+    "exampleCard": { // 'exampleCard' is how we'll reference this screen. It'll appear in the href= for links within the app
+      "cardSection": "SECTION HEADER", // This is the section header that appears outside/above the card. Used to differentiate majoe sections or the slides from the original PowerPoint.
+      "cardTitle": "CARD TITLE", // This is the text (no HTML) that will appear within the card.
+      "cardBody": "<p>Card Content.</p>", // HTML is ok here.
+      "choices": [
+        { 
+          "btnText": "Answer 1", // This is the text that will appear on the button
+          "leadsTo": "exampleCard_abc" // This is the reference to the card name (current card is "exampleCard"). If this is not a valid key in the JSON, your button will not be printed
+        }, // note comma leading to next choice
+        { 
+          "btnText": "Answer 2", 
+          "leadsTo": "exampleCard_xyz" 
+        } // Note that there is no comma after the last choice
+      ]
+    }, // Note there is a comma leading to the next item. If this was the last item there shouldn't be a comma
+    */
+    "card0": {
+      "cardSection": "Start Screen",
+      "cardTitle": "Placeholder Card",
+      "cardBody": "<p>Let's get started!</p>",
+      "choices": [
+        { 
+          "btnText": "Continue", 
+          "leadsTo": "example0" 
+        }
+      ]
+    },
+    "example0": {
+      "cardSection": "Dinner Decision Tree",
+      "cardTitle": "What do you feel like for dinner?",
+      "cardBody": "<p>It's Saturday night, and it's time to eat. Let's start with a cuisine&hellip;</p>",
+      "choices": [
+        { 
+          "btnText": "Italian", 
+          "leadsTo": "example1" 
+        },
+        {
+          "btnText": "French-Mexican Fusion",  // mmm...sounds good
+          "leadsTo": "no_key" // the French-Mexican fusion restaurant closed down...It's key is no longer in the JSON, but we forgot to remove it from here.
+        },
+        { 
+          "btnText": "Mexican", 
+          "leadsTo": "example2" 
+        }
+      ]
+    },
+    "example1": {
+      "cardSection": "Dinner Decision Tree: Italian",
+      "cardTitle": "Italian sounds tasty.",
+      "cardBody": "<p>Do you just want pizza, or maybe you'd like pasta too?</p>",
+      "choices": [
+        { 
+          "btnText": "Just Pizza", 
+          "leadsTo": "example3" 
+        },
+        { 
+          "btnText": "Pizza / Pasta", 
+          "leadsTo": "example4" 
+        }
+      ]
+    },
+    "example2": {
+      "cardSection": "Dinner Decision Tree: Mexican",
+      "cardTitle": "Mexican sounds tasty.",
+      "cardBody": "<p>The only Mexican restaurant in town is <strong>Casa Bonita</strong>.</p>",
+      "choices": [
+        { 
+          "btnText": "x", 
+          "leadsTo": "x" 
+        }
+      ]
+    },
+    "example3": {
+      "cardSection": "Dinner Decision Tree: Italian (Pizza)",
+      "cardTitle": "We're getting pizza!",
+      "cardBody": "<p>Dine-In or Delivery?</p>",
+      "choices": [
+        { 
+          "btnText": "Let's go out (Dine-In)", 
+          "leadsTo": "example5" 
+        },
+        { 
+          "btnText": "Let's stay home (Delivery)", 
+          "leadsTo": "example6" 
+        }
+      ]
+    },
+    "example4": {
+      "cardSection": "Dinner Decision Tree: Italian (General)",
+      "cardTitle": "I might want pasta, I might want pizza, I can't decide.",
+      "cardBody": "<p>There's only one place in town that has pasta as well as pizza. Let's eat at <strong>Tony's</strong>!</p>",
+      "choices": [
+        { 
+          "btnText": "x", 
+          "leadsTo": "x" 
+        }
+      ]
+    },
+    "example5": {
+      "cardSection": "Dinner Decision Tree: Italian (Pizza - Dine-In)",
+      "cardTitle": "Let's go out for pizza!",
+      "cardBody": "<p>There's only one place in town for dine-in pizza. Let's eat at <strong>Tony's</strong>!</p>",
+      "choices": [
+        { 
+          "btnText": "x", 
+          "leadsTo": "x" 
+        }
+      ]
+    },
+    "example6": {
+      "cardSection": "Dinner Decision Tree: Italian (Pizza - Delivery)",
+      "cardTitle": "Here are the options for pizza delivery:",
+      "cardBody": "<ul><li>Pizza Professionals</li><li>The Pizza Co.</li><li>Tony's Pizza</li></ul>",
+      "choices": [
+        { 
+          "btnText": "x", 
+          "leadsTo": "x" 
+        }
+      ]
+    }
+  }]
+}
