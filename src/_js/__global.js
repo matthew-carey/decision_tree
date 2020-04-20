@@ -52,7 +52,7 @@ function populateCard(key){
   const s_clickToStartOver = "Click here to start over";
 
   // Define our main URL (used in the event of an error)
-  const appURL = "http://forms.intrado.com/msft_cisco_decision_tree/";
+  const appURL = "http://yoursite.com/coolproject/";
 
   //console.log(decisionTree);
   //console.log( decisionTree.cards[0][key] );
