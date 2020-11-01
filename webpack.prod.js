@@ -66,21 +66,17 @@ module.exports = {
       filename: '[name].css',
       chunkFilename: '[id].css',
     }),
-    new CopyWebpackPlugin([
-      {
-          from: path.join(__dirname, 'src', '_data'),
+    new CopyWebpackPlugin({ 
+      patterns: [
+        { from: 'src/_data/', 
           transform: function(content) {
-              // minify json
-              return JSONMinifyPlugin(content.toString());
+            // minify json
+            return JSONMinifyPlugin(content.toString());
           },
-          to: path.join(__dirname, 'dist', '')
-      }
-    ]),
-    new CopyWebpackPlugin([
-      {
-          from: path.join(__dirname, 'src', 'config.php'),
-          to: path.join(__dirname, 'dist', 'config.php')
-      }
-    ]),
+          to: ''
+        },
+        { from: 'src/config.php', to: 'config.php' },
+      ]
+    }),
   ],
 };
