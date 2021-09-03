@@ -65,7 +65,7 @@ $common_css = "<!-- CSS -->\n";
 $common_css .= "<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">\n";
 $common_css .= "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Open+Sans|Roboto:100,300,400,700\">\n";
 //$common_css .= "<link rel=\"stylesheet\" href=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css\">\n";
-$common_css .= "<link rel=\"stylesheet\" href=\"../common/css/common_styles.css\" />\n";
+//$common_css .= "<link rel=\"stylesheet\" href=\"../common/css/common_styles.css\" />\n";
 // JS in <head> - I'm not using any jQuery in this project for Bootstrap-related items
 /*
 $common_js = "<!-- JavaScript -->\n";
